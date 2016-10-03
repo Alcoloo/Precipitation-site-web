@@ -2,7 +2,7 @@
   <div id= "header">
     <nav>
       <ul>
-        <li id ="lihome" class="active"><button id="homeButton">Home</button></li>
+        <li id ="lihome" class="active"><button id="homeButton">Accueil</button></li>
         <li id ="liabout"><button id="aboutButton">A Propos</button></li>
         <li id ="lievent"><button id="eventButton">Evènement</button></li>
         <li id ="litransmission"><button id="transmissionButton">Transmission</button></li>
