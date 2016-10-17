@@ -5,6 +5,7 @@
     <about v-if = "currentView == 'about'"></about>
     <evenements v-if = "currentView == 'event'"></evenements>
     <transmission v-if = "currentView == 'transmission'"></transmission>
+    <mecenat v-if = "currentView == 'mecenat'"></mecenat>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HomeNav from './components/HomeNav'
 import About from './components/About'
 import Evenements from './components/Evenements'
 import Transmission from './components/Transmission'
+import Mecenat from './components/Mecenat.vue'
 
 export default {
   data () {
@@ -31,6 +33,7 @@ export default {
     About,
     Evenements,
     Transmission,
+    Mecenat,
   }
 }
 </script>
