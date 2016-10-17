@@ -2,12 +2,12 @@
   <div id= "header">
     <nav>
       <ul>
-        <li id ="lihome" class="active"><button id="homeButton">Accueil</button></li>
-        <li id ="liabout"><button id="aboutButton">A Propos</button></li>
-        <li id ="lievent"><button id="eventButton">Evènement</button></li>
-        <li id ="litransmission"><button id="transmissionButton">Transmission</button></li>
-        <li id ="limecenat"><button id="mecenatButton">Mécenat</button></li>
-        <li id ="licontact"><button id="contactButton">Contact</button></li>
+        <li id ="lihome" class="active"><button id="homeButton">ACCUEIL</button></li>
+        <li id ="liabout"><button id="aboutButton">À PROPOS</button></li>
+        <li id ="lievent"><button id="eventButton">EVÈNEMENTS</button></li>
+        <li id ="litransmission"><button id="transmissionButton">TRANSMISSION</button></li>
+        <li id ="limecenat"><button id="mecenatButton">MÉCENAT</button></li>
+        <li id ="licontact"><button id="contactButton">CONTACT</button></li>
       </ul>
     </nav>
   </div>
@@ -29,74 +29,305 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@font-face {
+    font-family: "futura-light";
+    src: url('../assets/Futura_Std/FuturaStd-Light.otf') ;
+}
+
 * {
 margin: 0;
 padding: 0;
 }
-#header{
-  background-color:rgb(166, 43, 72);
-  position :absolute;
-  width: 100%;
-  top:0px;
-  left: 0px;
-  z-index: 99;
-}
+
 button{
-  border: none;
-  background: none;
-  outline: none;
-  font-size: larger;
+        font-family: "futura-light";
+        border: none;
+        background: none;
+        outline: none;
+        font-size: larger;
+    }
+
+ li button {
+      text-decoration: none;
+      color: white;
+
+      /* transitions & animations
+      transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -o-transition: all .5s ease; */
+    }
+
+    li button:hover {
+      color: #333;
+    }
+
+    li.active button {
+      font-weight:bold;
+      color: #e08ba2;
+    }
+#header{
+  background: rgb(166, 43, 72);
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
-
-
-nav {
-  margin:auto;
+a{
+  text-decoration: none;
+  color: inherit;
+}
+nav ul{
+  background-color: rgb(166, 43, 72);
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+nav ul li{
+  display: inline-block;
+  padding: 1%;
+    font-size: 150%;
+}
+nav ul li:hover{
+  background-color: rgb(166, 43, 72);
+  color:#333;
+}
+section{
+  line-height: 1.5em;
   padding: 20px;
-  position: relative;
-  display: flex;
- justify-content: center;
- max-width: 1080px;
- margin: auto;
+  margin: 0 auto;
+  width: 85%;
+}
+.handle{
+  width: 100%;
+  background: rgb(166, 43, 72);
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+@media all and (orientation: portrait){
+  nav ul{
+    max-height:0;
+    float:right;
+  }
+  .showing{
+    background-color:#333;
+    max-height: 32em;
+    max-width:20em;
+    float:right;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+       padding: 5%;
+    font-size: 150%;
+  }
+
+  .handle{
+    display: inline-block;
+    text-align:right;
+    float:right;
+  }
+  .icon {
+  margin:0 auto;
+  height:50px;
+  width:70px;
+  position:relative;
+    float:right;
+  }
+  #hamburger-two {
+  border-radius:100%;
 }
 
-/* list styles */
-ul {
-margin: 0px auto;
-overflow: auto;
-list-style: none;
+#hamburger-two:before {
+  content:'';
+  display:block;
+  position:absolute;
+  height:80px;
+  width:80px;
+  background:transparent;
+  top:-23px;
+  left:-5px;
+  border-radius:100%;
 }
 
-li {
-font-family: Open Sans, sans-serif;
-font-size: 20px;
-font-weight:300;
-float: left;
-padding-right: 20px;
-padding-left: 20px;
-border-right: 1px solid #999;
+#hamburger-two:hover:before {
+
 }
 
-li:last-child {
-border: none;
+#hamburger-two span {
+  display:block;
+  width:70%;
+  height:7px;
+  left:15%;
+  background:#fff;
+  position:absolute;
 }
 
-li button {
-text-decoration: none;
-color: #888;
-
-/* transitions & animations
-transition: all .5s ease;
--webkit-transition: all .5s ease;
--moz-transition: all .5s ease;
--o-transition: all .5s ease; */
+#hamburger-two span:nth-of-type(1) {
+  top:0px;
+  left:auto;
+  right:15%;
 }
 
-li button:hover {
-color: #333;
+#hamburger-two span:nth-of-type(2) {
+  top:14px;
 }
 
-li.active button {
-color: #F15A24;
-font-weight: normal;
+#hamburger-two span:nth-of-type(2):before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#fff;
+  width:100%;
+  height:100%;
 }
+
+#hamburger-two span:nth-of-type(3) {
+  top:28px;
+  left:15%;
+}
+
+#hamburger-two.active:before {
+  background:rgb(166, 43, 72);
+}
+
+#hamburger-two.active span:nth-of-type(1),#hamburger-two.active span:nth-of-type(3){
+  width:0%;
+}
+
+#hamburger-two.active span:nth-of-type(2) {
+  transform:rotate(45deg);
+  background:#fff;
+}
+
+#hamburger-two.active span:nth-of-type(2):before {
+  transform:rotate(90deg);
+  background:#fff;
+}
+  *,*:before {
+  transition:.25s ease-in-out;
+}
+}
+
+@media screen and (max-width: 700px){
+  nav ul{
+    max-height:0;
+    float:right;
+  }
+  .showing{
+    background-color:#333;
+    max-height: 32em;
+    max-width:20em;
+    float:right;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+       padding: 5%;
+    font-size: 150%;
+  }
+
+  .handle{
+    display: inline-block;
+    text-align:right;
+    float:right;
+  }
+  .icon {
+  margin:0 auto;
+  height:50px;
+  width:70px;
+  position:relative;
+    float:right;
+  }
+  #hamburger-two {
+  border-radius:100%;
+}
+
+#hamburger-two:before {
+  content:'';
+  display:block;
+  position:absolute;
+  height:80px;
+  width:80px;
+  background:transparent;
+  top:-23px;
+  left:-5px;
+  border-radius:100%;
+}
+
+#hamburger-two:hover:before {
+  background:#fff;
+}
+
+#hamburger-two span {
+  display:block;
+  width:70%;
+  height:7px;
+  left:15%;
+  background:#fff;
+  position:absolute;
+}
+
+#hamburger-two span:nth-of-type(1) {
+  top:0px;
+  left:auto;
+  right:15%;
+}
+
+#hamburger-two span:nth-of-type(2) {
+  top:14px;
+}
+
+#hamburger-two span:nth-of-type(2):before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#fff;
+  width:100%;
+  height:100%;
+}
+
+#hamburger-two span:nth-of-type(3) {
+  top:28px;
+  left:15%;
+}
+
+#hamburger-two.active:before {
+  background:rgb(166, 43, 72);
+}
+
+#hamburger-two.active span:nth-of-type(1),#hamburger-two.active span:nth-of-type(3){
+  width:0%;
+}
+
+#hamburger-two.active span:nth-of-type(2) {
+  transform:rotate(45deg);
+  background:#fff;
+}
+
+#hamburger-two.active span:nth-of-type(2):before {
+  transform:rotate(90deg);
+  background:#fff;
+}
+  *,*:before {
+  transition:.25s ease-in-out;
+}
+}
+
+
 </style>

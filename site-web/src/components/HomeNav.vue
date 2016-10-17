@@ -2,7 +2,7 @@
             <div id="home1" class="info">
                 <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
                 <div id="texthome">LE BAROQUE, AUTREMENT.</div>
-                <video id="imghome" poster="video/myPoster.jpg" controls preload >
+                <video id="imghome" poster=".src\assets\video\myPoster.jpg" controls preload >
 				<source src="video/myVideo.mp4" type="video/mp4" />
       </video>
                 <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
@@ -23,46 +23,65 @@ export default {
 }
 </script>
 
+
 <style scoped>
+
+@font-face {
+    font-family: "futura-light";
+    src: url('../assets/Futura_Std/FuturaStd-Light.otf') ;
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url('../assets/Futura_Std/gotham-medium.ttf') ;
+}
+
+@font-face {
+    font-family: "futura-book";
+    src: url('../assets/Futura_Std/FuturaStd-Book.otf') ;
+}
+
 #home1{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        opacity: 1;
-    }
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    z-index: 1;
+}
 
-    #titre-home{
-        text-align: left;
-        position: absolute;
-        top : 11%;
-        left : 50%;
-        width: 25%;
-        font-size: 300%;
-    }
+#titre-home{
+    text-align: center;
+    position: absolute;
+    top : 10%;
+    left : 25%;
+    font-size: 250%;
+    font-family: "Gotham Medium";
+}
 
-    #texthome{
-        text-align: right;
-        position: absolute;
-        top : 35%;
-        left : 38%;
-        font-size: 250%;
-    }
+#texthome{
+    text-align: right;
+    position: absolute;
+    top : 25%;
+    left : 28.2%;
+    font-size: 150%;
+    font-family: "futura-book";
+}
 
-    #imghome{
-        text-align: right;
-        position: absolute;
-        width: 75%;
-        height: 30%;
-        top : 40%;
-        left : 13%;
-    }
+#imghome{
+    text-align: right;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top : 32%;
+    left : 17%;
+}
 
-    #descriptionhome {
-        text-align: left;
-        position: absolute;
-        top : 72%;
-        left : 13%;
-        font-size: 200%;
-    }
-  </style>
+#descriptionhome {
+    text-align: left;
+    position: absolute;
+    top : 75%;
+    left : 17%;
+    font-size: 150%;
+    font-family: "futura-light";
+}
+</style>

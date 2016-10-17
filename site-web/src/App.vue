@@ -3,6 +3,7 @@
     <header-nav></header-nav>
     <home-nav></home-nav>
     <about></about>
+    <evenements></evenements>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import HeaderNav from './components/HeaderNav'
 import HomeNav from './components/HomeNav'
 import About from './components/About'
+import Evenements from './components/Evenements'
 
 export default {
   components: {
     HeaderNav,
     HomeNav,
     About,
+    Evenements,
   }
 }
 </script>
@@ -26,10 +29,16 @@ html {
   width: 100%;
 }
 
-body {
-  height: 100%;
-  width: 100%;
-}
+body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+
+    }
 
 #app {
   color: #2c3e50;
