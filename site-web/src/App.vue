@@ -4,6 +4,7 @@
     <home-nav></home-nav>
     <about></about>
     <evenements></evenements>
+    <transmission></transmission>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderNav from './components/HeaderNav'
 import HomeNav from './components/HomeNav'
 import About from './components/About'
 import Evenements from './components/Evenements'
+import Transmission from './components/Transmission'
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     HomeNav,
     About,
     Evenements,
+    Transmission,
   }
 }
 </script>
