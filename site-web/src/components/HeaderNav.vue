@@ -2,12 +2,12 @@
   <div id= "header">
     <nav>
       <ul>
-        <li id ="lihome" class="active"><button id="homeButton">ACCUEIL</button></li>
-        <li id ="liabout"><button id="aboutButton">À PROPOS</button></li>
-        <li id ="lievent"><button id="eventButton">EVÈNEMENTS</button></li>
-        <li id ="litransmission"><button id="transmissionButton">TRANSMISSION</button></li>
-        <li id ="limecenat"><button id="mecenatButton">MÉCENAT</button></li>
-        <li id ="licontact"><button id="contactButton">CONTACT</button></li>
+        <li id ="lihome" v-bind:class="{active:isHome}"><button id="homeButton" v-on:click="switchView('home')">ACCUEIL</button></li>
+        <li id ="liabout" v-bind:class="{active:isAbout}"><button id="aboutButton" v-on:click="switchView('about')">À PROPOS</button></li>
+        <li id ="lievent" v-bind:class="{active:isEvent}"><button id="eventButton"  v-on:click="switchView('event')">EVÈNEMENTS</button></li>
+        <li id ="litransmission" v-bind:class="{active:isTransmission}"><button id="transmissionButton"  v-on:click="switchView('transmission')">TRANSMISSION</button></li>
+        <li id ="limecenat" v-bind:class="{active:isMecenat}"><button id="mecenatButton"  v-on:click="switchView('mecenat')">MÉCENAT</button></li>
+        <li id ="licontact" v-bind:class="{active:isContact}"><button id="contactButton"  v-on:click="switchView('contact')">CONTACT</button></li>
       </ul>
     </nav>
   </div>
@@ -21,7 +21,39 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-
+      lastViewClicked : 'home',
+    }
+  },
+  computed:{
+    isHome(){
+      if(this.lastViewClicked == 'home')return true
+      else return false
+    },
+    isAbout(){
+      if(this.lastViewClicked == 'about')return true
+      else return false
+    },
+    isEvent(){
+      if(this.lastViewClicked == 'event')return true
+      else return false
+    },
+    isTransmission(){
+      if(this.lastViewClicked == 'transmission')return true
+      else return false
+    },
+    isMecenat(){
+      if(this.lastViewClicked == 'mecenat')return true
+      else return false
+    },
+    isContact(){
+      if(this.lastViewClicked == 'contact')return true
+      else return false
+    }
+  },
+  methods:{
+    switchView(pTarget){
+      this.$parent.currentView = pTarget
+      this.lastViewClicked = pTarget
     }
   }
 }

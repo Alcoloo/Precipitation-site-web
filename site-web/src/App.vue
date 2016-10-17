@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <header-nav></header-nav>
-    <home-nav></home-nav>
-    <about></about>
-    <evenements></evenements>
-    <transmission></transmission>
+    <home-nav v-if = "currentView == 'home'"></home-nav>
+    <about v-if = "currentView == 'about'"></about>
+    <evenements v-if = "currentView == 'event'"></evenements>
+    <transmission v-if = "currentView == 'transmission'"></transmission>
   </div>
 </template>
 
@@ -16,6 +16,15 @@ import Evenements from './components/Evenements'
 import Transmission from './components/Transmission'
 
 export default {
+  data () {
+    return {
+      // note: changing this line won't causes changes
+      // with hot-reload because the reloaded component
+      // preserves its current state and we are modifying
+      // its initial state.
+      currentView : 'home'
+    }
+  },
   components: {
     HeaderNav,
     HomeNav,

@@ -38,7 +38,7 @@ export default {
     position: absolute;
     -webkit-transform:translateZ(-48px);
     -moz-transform:translateZ(-48px);
-    opacity: 0;
+    opacity: 1;
     height: 100%;
     width: 100%;
     z-index: 1;

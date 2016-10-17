@@ -44,7 +44,7 @@ export default {
 #home1{
     position: absolute;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     z-index: 1;
 }
