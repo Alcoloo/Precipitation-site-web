@@ -1,15 +1,21 @@
 <template>
   <div id="app">
     <header-nav></header-nav>
+    <home-nav></home-nav>
+    <about></about>
   </div>
 </template>
 
 <script>
 import HeaderNav from './components/HeaderNav'
+import HomeNav from './components/HomeNav'
+import About from './components/About'
 
 export default {
   components: {
-    HeaderNav
+    HeaderNav,
+    HomeNav,
+    About,
   }
 }
 </script>
