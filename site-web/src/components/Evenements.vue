@@ -80,7 +80,7 @@ export default {
         position: absolute;
         -webkit-transform:translateZ(-98px);
         -moz--transform:translateZ(-98px);
-        opacity: 1;
+        opacity: 0;
         height: 100%;
         width: 100%;
         z-index: 1;
