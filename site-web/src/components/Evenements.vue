@@ -91,14 +91,14 @@ export default {
         text-align: right;
         position: absolute;
         font-size: 300%;
-        top : 15%;
+        top : 10%;
         left : 50%;
     }
     /* EVENT 1 */
 
     #imgevent{
         position: relative;
-        top : 38%;
+        top : 25%;
         left : 15%;
         width:41%;
         height: 24%;
@@ -108,14 +108,14 @@ export default {
                 position: absolute;
                 height: 27%;
                 width: 60%;
-                top : 0%;
+                top : -15%;
                 left : 0%;
             }
 
             #event1right{
                 position: absolute;
                 height: 100%;
-                width: 100%;
+                width: 80%;
                 top : 5%;
                 left : 98%;
             }
@@ -134,8 +134,8 @@ export default {
             #eventDate{
                 font-family: "futura-book";
                 position: absolute;
-                top:0%;
-                left:20%;
+                top:-5%;
+                left:15%;
                 font-size: 150%;
             }
 
@@ -144,7 +144,7 @@ export default {
                 position: absolute;
                 top: 140%;
                 left:-25%;
-                font-size: 150%;
+                font-size: 100%;
                 width: 200%;
             }
 
@@ -154,15 +154,15 @@ export default {
                 background-size: contain;
                 background-repeat: no-repeat;
                 left: 10%;
-                top: 31%;
+                top: 30%;
                 width: 61%;
                 height: 66%;
             }
 
             #event1deco{
                 position: absolute;
-                width: 3%;
-                height: 89%;
+                width: 2%;
+                height: 100%;
                 top : 0%;
                 left : 100%;
                 background-color: rgb(166, 43, 72);
@@ -171,7 +171,7 @@ export default {
             #event1H{
                 position : relative;
                 top : 26%;
-                left: -25%;
+                left: 90%;
                 width: 200%;
                 height: 5%;
                 text-align: left;
@@ -210,7 +210,7 @@ export default {
                         position: absolute;
                         height: 100%;
                         width: 40%;
-                        top : 0%;
+                        top : -10%;
                         left : 4%;
                     }
 
@@ -218,7 +218,7 @@ export default {
                         position: absolute;
                         height: 47%;
                         width: 65%;
-                        top : 0%;
+                        top : -15%;
                         left : 43%;
                     }
 
@@ -238,7 +238,7 @@ export default {
                         position: absolute;
                         text-align: right;
                         top:10%;
-                        left:42%;
+                        left:50%;
                         font-size: 150%;
                     }
 
@@ -256,7 +256,7 @@ export default {
                         background-size: contain;
                         background-repeat: no-repeat;
                         left:21%;
-                        top:47%;
+                        top:58%;
                         width:65%;
                         height: 65%;
                     }

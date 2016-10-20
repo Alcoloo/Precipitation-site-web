@@ -2,9 +2,7 @@
             <div id="home1" class="info">
                 <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
                 <div id="texthome">LE BAROQUE, AUTREMENT.</div>
-                <video id="imghome" poster=".src\assets\video\myPoster.jpg" controls preload >
-				<source src="video/myVideo.mp4" type="video/mp4" />
-      </video>
+                <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
                 <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
             </div>
 
@@ -52,17 +50,17 @@ export default {
 #titre-home{
     text-align: center;
     position: absolute;
-    top : 10%;
-    left : 25%;
-    font-size: 250%;
+    top : 9%;
+    left : 26%;
+    font-size: 270%;
     font-family: "Gotham Medium";
 }
 
 #texthome{
     text-align: right;
     position: absolute;
-    top : 25%;
-    left : 28.2%;
+    top : 22%;
+    left : 31.5%;
     font-size: 150%;
     font-family: "futura-book";
 }
@@ -72,15 +70,17 @@ export default {
     position: absolute;
     width: 30%;
     height: 40%;
-    top : 32%;
-    left : 17%;
+    top : 31%;
+    left : 22.5%;
+    background-image: url('../assets/video/MyPoster.jpg');
+    background-size: contain;
 }
 
 #descriptionhome {
     text-align: left;
     position: absolute;
     top : 75%;
-    left : 17%;
+    left : 22.5%;
     font-size: 150%;
     font-family: "futura-light";
 }

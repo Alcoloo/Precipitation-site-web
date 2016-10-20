@@ -49,8 +49,9 @@ export default {
     text-align: right;
     position: absolute;
     font-size: 350%;
-    top : 12%;
+    top : 10%;
     left : 30%;
+    font-weight: bold;
 }
 
 #text0about{
