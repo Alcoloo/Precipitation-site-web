@@ -1,44 +1,45 @@
 <template>
   <div id="event1" class="info">
-                  <div id="textevent"> ÉVÈNEMENTS </div>
-                  <div id="imgevent">
-                      <div id = "event1left">
-                          <h1 id = "event1H">TEARS OF THE NYMPH [1]</h1><br>
-                                          <p id='event1Pcolor' style = "color : rgb(166, 43, 72)">PERFORMANCE ÉVOLUTIVE</p><br>
-                                          <p id="event1P">Piersten Leirom, performeur<br>
-                                                          Grégoire Lorieux, électronique<br>
-                                                          Précipitations & Sébastien Amadieu<br><br>
-                                                          Eglise des Billettes, Paris
-                                          </p>
-                      </div>
-                      <div id ='event1deco'></div>
-                      <div id="event1right">
-                          <div id='eventDate'><div id='event1imgCalendar'></div>16 OCT. 2016<br>
-                                              <a id='event1plus'>en voir plus >></a>
-                          </div>
-                          <div id="event1img"></div>
-                      </div>
-                  </div>
+    <div id="textevent"> ÉVÈNEMENTS </div>
+    <div id="imgevent">
+      <div id = "event1left">
+        <h1 id = "event1H">TEARS OF THE NYMPH [1]</h1><br>
+            <p id='event1Pcolor' style = "color : rgb(166, 43, 72)">PERFORMANCE ÉVOLUTIVE</p><br>
+            <p id="event1P">Piersten Leirom, performeur<br>
+                          Grégoire Lorieux, électronique<br>
+                          Précipitations & Sébastien Amadieu<br><br>
+                          Eglise des Billettes, Paris
+            </p>
+      </div>
+        <div id ='event1deco'></div>
+        <div id="event1right">
+          <div id='eventDate'>
+            <div id='event1imgCalendar'></div>16 OCT. 2016<br>
+            <a id='event1plus'>en voir plus >></a>
+          </div>
+          <div id="event1img"></div>
+        </div>
+    </div>
 
-                  <div id="img1event">
-                      <div id = "event2right">
-                          <h1 id = "event2H">IN NOMINE...</h1><br>
-                                          <p id='event2Pcolor' style = "color : rgb(166, 43, 72)">RÉCITAL - DUO CLAVECIN & VIOLON</p><br>
-                                          <p id="event2P">Nathalie Fontaine, violon<br>
-                                                          Sébastien Amadieu, clavecin<br><br>
-
-                                                          Temple de Levallois-Perret
-                                          </p>
-                      </div>
-                      <div id ='event2deco'></div>
-                      <div id="event2left">
-                          <div id='event2Date'><div id='event2imgCalendar'></div>7 AVRIL 2016<br>
-                                              <a id='event2plus'>en voir plus >></a>
-                          </div>
-                          <div id="event2img"></div>
-                      </div>
-                  </div>
-              </div>
+    <div id="img1event">
+      <div id = "event2right">
+          <h1 id = "event2H">IN NOMINE...</h1><br>
+            <p id='event2Pcolor' style = "color : rgb(166, 43, 72)">RÉCITAL - DUO CLAVECIN & VIOLON</p><br>
+            <p id="event2P">Nathalie Fontaine, violon<br>
+                            Sébastien Amadieu, clavecin<br><br>
+                            Temple de Levallois-Perret
+            </p>
+        </div>
+        <div id ='event2deco'></div>
+        <div id="event2left">
+          <div id='event2Date'>
+            <div id='event2imgCalendar'></div>7 AVRIL 2016<br>
+            <a id='event2plus'>en voir plus >></a>
+          </div>
+          <div id="event2img"></div>
+        </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -77,226 +78,227 @@ export default {
 }
 
 #event1{
-        position: absolute;
-        -webkit-transform:translateZ(-98px);
-        -moz--transform:translateZ(-98px);
-        opacity: 1;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
 
-    #textevent{
-        font-family: "Gotham Medium";
-        text-align: right;
-        position: absolute;
-        font-size: 300%;
-        top : 10%;
-        left : 50%;
-    }
+#textevent{
+    font-family: "Gotham Medium";
+    text-align: right;
+    position: absolute;
+    font-size: 45px;
+    top : 80px;
+    left : 45%;
+}
     /* EVENT 1 */
 
-    #imgevent{
-        position: relative;
-        top : 25%;
-        left : 15%;
-        width:41%;
-        height: 24%;
+#imgevent{
+  position: relative;
+  top : 180px;
+  left : 100px;
+  width:400px;
+  height: 24%;
+}
+#event1left{
+  position: absolute;
+  height: 27%;
+  width: 60%;
+  top : -15%;
+  left : 0%;
+}
 
-    }
-            #event1left{
-                position: absolute;
-                height: 27%;
-                width: 60%;
-                top : -15%;
-                left : 0%;
-            }
+#event1right{
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top : 8px;
+  left : 100%;
+}
 
-            #event1right{
-                position: absolute;
-                height: 100%;
-                width: 80%;
-                top : 5%;
-                left : 98%;
-            }
+#event1imgCalendar{
+  background-image: url('../assets/img/calendrier_event.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 100%;
+  top: 0%;
+  left:-30px;
+  position: absolute;
+}
 
-            #event1imgCalendar{
-                background-image: url('../assets/img/calendrier_event.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 30%;
-                height: 100%;
-                top: 0%;
-                left: -25%;
-                position: absolute;
-            }
+#eventDate{
+  font-family: "futura-book";
+  position: absolute;
+  top:0%;
+  left:15%;
+  font-size: 20px;
+}
 
-            #eventDate{
-                font-family: "futura-book";
-                position: absolute;
-                top:-5%;
-                left:15%;
-                font-size: 150%;
-            }
+#event1plus{
+  font-family: "futura-light-oblique";
+  position: absolute;
+  top: 140%;
+  left:-30px;
+  font-size: 18px;
+  width: 200%;
+}
 
-            #event1plus{
-                font-family: "futura-light-oblique";
-                position: absolute;
-                top: 140%;
-                left:-25%;
-                font-size: 100%;
-                width: 200%;
-            }
+#event1img{
+  position : absolute;
+  background:url('../assets/img/img1-event.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 20px;
+  top: 30%;
+  width: 190px;
+  height:150px;
+}
 
-            #event1img{
-                position : absolute;
-                background:url('../assets/img/img1-event.jpg');
-                background-size: contain;
-                background-repeat: no-repeat;
-                left: 10%;
-                top: 30%;
-                width: 61%;
-                height: 66%;
-            }
+#event1deco{
+  position: relative;
+  width: 10px;
+  height: 100%;
+  top : 0%;
+  left : 100%;
+  background-color: rgb(166, 43, 72);
+}
 
-            #event1deco{
-                position: absolute;
-                width: 2%;
-                height: 100%;
-                top : 0%;
-                left : 100%;
-                background-color: rgb(166, 43, 72);
-            }
+#event1H{
+  position : absolute;
+  top : 10px;
+  left: 0;
+  width: 200%;
+  height: 5%;
+  text-align: left;
+  font-family: "futura-heavy";
+  font-size: 33px;
+}
+#event1Pcolor{
+  font-family: "futura-book";
+  position : relative;
+  text-align: right;
+  top : 40px;
+  right : 95px;
+  width: 200%;
+  font-size: 23px;
+}
 
-            #event1H{
-                position : relative;
-                top : 26%;
-                left: 90%;
-                width: 200%;
-                height: 5%;
-                text-align: left;
-                font-family: "futura-heavy";
-                font-size: 250%;
-            }
-            #event1Pcolor{
-                font-family: "futura-book";
-                position : absolute;
-                text-align: right;
-                top : 122%;
-                left : -38%;
-                width: 200%;
-                font-size: 150%;
-            }
+#event1P{
+  font-family: "futura-book";
+  text-align: right;
+  position : relative;
+  bottom : 30px;
+  right : 95px;
+  width: 200%;
+  font-size: 23px;
+}
 
-            #event1P{
-                font-family: "futura-book";
-                text-align: right;
-                position : absolute;
-                top : 165%;
-                left: -40%;
-                width: 200%;
-                height: 10%;
-                font-size: 150%;
-            }
-            #img1event{
-                        position: relative;
-                        height: 22%;
-                        width: 44%;
-                        top : 30%;
-                        left : 5%;
-                    }
+/* EVENT 2 */
 
-                    #event2left{
-                        position: absolute;
-                        height: 100%;
-                        width: 40%;
-                        top : -10%;
-                        left : 4%;
-                    }
+#img1event{
+    position: relative;
+    height: 22%;
+    width: 44%;
+    top : 230px;
+    left : 100px;
+}
 
-                    #event2right{
-                        position: absolute;
-                        height: 47%;
-                        width: 65%;
-                        top : -15%;
-                        left : 43%;
-                    }
+#event2left{
+  position: absolute;
+  height: 100%;
+  width: 160px;
+  top : -20px;
+  left : 20px;
+}
 
-                    #event2imgCalendar{
-                        background-image: url('../assets/img/calendrier_event.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        width: 50%;
-                        height: 100%;
-                        top: 0%;
-                        left: -32%;
-                        position: absolute;
-                    }
+#event2right{
+  position: absolute;
+  height: 47%;
+  width: 65%;
+  top : -20px;
+  left : 210px;
+}
 
-                    #event2Date{
-                        font-family: "futura-book";
-                        position: absolute;
-                        text-align: right;
-                        top:10%;
-                        left:50%;
-                        font-size: 150%;
-                    }
+#event2imgCalendar{
+  background-image: url('../assets/img/calendrier_event.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 30px;
+  top: -3px;
+  left: -40px;
+  position: absolute;
+}
 
-                    #event2plus{
-                        font-family: "futura-light-oblique";
-                        position: absolute;
-                        top: 130%;
-                        left: -20%;
-                        width: 120%;
-                    }
+#event2Date{
+  font-family: "futura-book";
+  position: absolute;
+  text-align: right;
+  top: 30px;
+  left: 35px;
+  font-size: 20px;
+}
 
-                    #event2img{
-                        position : absolute;
-                        background:url('../assets/img/img2-event.jpg');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        left:21%;
-                        top:58%;
-                        width:65%;
-                        height: 65%;
-                    }
+#event2plus{
+  font-family: "futura-light-oblique";
+  position: relative;
+  top: 30px;
+  left: 0px;
+  width: 120%;
+  font-size: 18px;
+}
 
-                    #event2deco{
-                        position: absolute;
-                        width: 1.5%;
-                        height: 107%;
-                        top : 0%;
-                        left : 40%;
-                        background-color: rgb(166, 43, 72);
-                    }
+#event2img{
+  position : absolute;
+  background:url('../assets/img/img2-event.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -30px;
+  top: 125px;
+  width: 190px;
+  height: 110px;
+}
 
-                    #event2H{
-                        position : absolute;
-                        top : 15%;
-                        left: 0%;
-                        width: 100%;
-                        height: 5%;
-                        text-align: left;
-                        font-family: "futura-heavy";
-                        font-size: 200%;
-                    }
-                    #event2Pcolor{
-                        font-family: "futura-book";
-                        position : absolute;
-                        text-align: left;
-                        top : 75%;
-                        left : 0%;
-                        font-size: 150%;
-                    }
+#event2deco{
+  position: relative;
+  width: 10px;
+  height: 107%;
+  top: 0;
+  left: 190px;
+  background-color: rgb(166, 43, 72);
+}
 
-                    #event2P{
-                        font-family: "futura-book";
-                        text-align: left;
-                        position : absolute;
-                        top : 117%;
-                        left: 0%;
-                        width: 100%;
-                        height: 10%;
-                        font-size: 150%;
-                    }
+#event2H{
+  position : absolute;
+  top : 0;
+  left: 0%;
+  width: 200px;
+  height: 5%;
+  text-align: left;
+  font-family: "futura-heavy";
+  font-size: 33px;
+}
+#event2Pcolor{
+  font-family: "futura-book";
+  position : absolute;
+  text-align: left;
+  width: 390px;
+  top : 50px;
+  left : 0;
+  font-size: 23px;
+}
+
+#event2P{
+  font-family: "futura-book";
+  text-align: left;
+  position : absolute;
+  top : 95px;
+  left: 0%;
+  width: 290px;
+  height: 10%;
+  font-size: 23px;
+}
 </style>
