@@ -98,7 +98,7 @@ export default {
 #imgevent{
   position: relative;
   top : 180px;
-  left : 100px;
+  left : 30%;
   width:400px;
   height: 24%;
 }
@@ -203,7 +203,7 @@ export default {
     height: 22%;
     width: 44%;
     top : 230px;
-    left : 100px;
+    left : 10%;
 }
 
 #event2left{
@@ -300,5 +300,364 @@ export default {
   width: 290px;
   height: 10%;
   font-size: 23px;
+}
+
+@media all and (max-width : 1024px) {
+  #textevent{
+    font-size: 35px;
+    left : 50%;
+    top : 50px;
+  }
+  /* EVENT 1 */
+  #imgevent{
+    top : 130px;
+    left :10%;
+  }
+  #event1left #event1H{
+    font-size: 28px;
+    top : 15px;
+    left : 75px;
+  }
+  #event1left #event1Pcolor{
+    font-size: 20px;
+  }
+  #event1left #event1P{
+    font-size: 20px;
+    top : 0px;
+  }
+  #event1right #eventDate{
+    font-size: 18px;
+  }
+  #event1right #eventDate #event1plus{
+    font-size: 16px;
+  }
+
+  /* EVENT 2 */
+  #img1event{
+    top : 180px;
+    left : 10%;
+  }
+  #event2right #event2H{
+    font-size: 28px;
+    top : 15px;
+    left : 0px;
+  }
+  #event2right #event2Pcolor{
+    font-size: 20px;
+  }
+  #event2right #event2P{
+    font-size: 20px;
+    top : 110px;
+  }
+  #event2left #event2Date{
+    font-size: 18px;
+    left : 45px;
+    top : 40px;
+  }
+  #event2left #eventDate #event2plus{
+    font-size: 16px;
+  }
+  #event2deco{
+    height: 100%;
+    top : 14px;
+  }
+}
+@media all and (max-width : 768px) {
+  #textevent{
+    font-size: 30px;
+    left : 45%;
+    top : 50px;
+  }
+  /* EVENT 1 */
+  #imgevent{
+    top: 130px;
+    left: inherit;
+    right: 170px;
+    position: absolute;
+  }
+  #event1left{
+    width: 45%;
+  }
+  #event1deco{
+    left: 280px;
+    height: 177px;
+  }
+  #event1left #event1H{
+    font-size: 22px;
+    top: 17px;
+    left: 10px;
+  }
+  #event1left #event1Pcolor{
+    font-size: 17px;
+    top: 40px;
+  }
+  #event1left #event1P{
+    font-size: 16px;
+    top: 0px;
+  }
+
+  #event1right{
+    top: -10px;
+    left: 280px;
+  }
+  #event1right #eventDate{
+    font-size: 15px;
+    top: 10px;
+  }
+  #event1right #eventDate #event1plus{
+    font-size: 14px;
+    top: 35px;
+  }
+  #event1right #event1img{
+    left: 20px;
+    top: 66px;
+    width: 160px;
+    height: 150px;
+  }
+
+  /* EVENT 2 */
+  #img1event{
+    top: 390px;
+    left: 0px;
+    position: absolute;
+  }
+  #event2right #event2H{
+    font-size: 22px;
+    top: 17px;
+    left: 0px;
+  }
+  #event2right #event2Pcolor{
+    font-size: 16px;
+  }
+  #event2right #event2P{
+    font-size: 16px;
+    top: 90px;
+  }
+  #event2left{
+    top: -20px;
+    left: 30px;
+  }
+  #event2left #event2Date{
+    font-size: 16px;
+    left: 45px;
+    top: 40px;
+  }
+  #event2left #event2Date #event2imgCalendar{
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -35px;
+  }
+  #event2left #event2Date #event2plus{
+    top: 10px;
+    left: 0px;
+    width: 120%;
+    font-size: 14px;
+  }
+  #event2left #event2img{
+    left: 0px;
+    top: 103px;
+    width: 150px;
+    height: 90px;
+  }
+  #event2deco{
+    height: 153px;
+    top: 14px;
+    left: 190px;
+  }
+}
+@media all and (max-width : 580px) {
+  #imgevent{
+    right: inherit;
+    left: 0;
+  }
+}
+
+@media all and (max-device-width : 1024px) {
+  #textevent{
+    font-size: 60px;
+    left: 35%;
+    top: 90px;
+  }
+  /* EVENT 1 */
+  #imgevent{
+    top: 280px;
+    left: 150px;
+  }
+  #event1left #event1H{
+    font-size: 40px;
+    top: 15px;
+    left: -60px;
+  }
+  #event1left #event1Pcolor{
+    font-size: 30px;
+  }
+  #event1left #event1P{
+    font-size: 30px;
+    top: 0px;
+  }
+  #event1left #event1deco{
+    left: 400px;
+  }
+  #event1right #eventDate{
+    font-size: 32px;
+    left: 60px;
+  }
+  #event1right #eventDate #event1imgCalendar{
+    width: 50px;
+    height: 100%;
+    top: 0%;
+    left: -40px;
+  }
+  #event1right #eventDate #event1plus{
+    font-size: 25px;
+  }
+  #event1right #event1img{
+    left: 20px;
+    top: 30%;
+    width: 280px;
+    height: 230px;
+  }
+
+  /* EVENT 2 */
+  #img1event{
+    top: 500px;
+    left: 150px;
+  }
+  #event2right #event2H{
+    font-size: 40px;
+    top: 5px;
+    left: 0px;
+    width: 250px;
+  }
+  #event2right #event2Pcolor{
+    font-size: 30px;
+    width: 500px;
+  }
+  #event2right #event2P{
+    font-size: 30px;
+    top: 110px;
+    width: 500px;
+  }
+  #event2left{
+    width: 160px;
+    top: -20px;
+    left: 20px;
+  }
+  #event2left #event2Date{
+    font-size: 32px;
+    left: -35px;
+    top: 40px;
+  }
+  #event2left #event2Date #event2imgCalendar{
+    width: 50px;
+    height: 50px;
+    top: -3px;
+    left: -60px;
+  }
+  #event2left #event2Date #event2plus{
+    top: 20px;
+    left: 0px;
+    width: 120%;
+    font-size: 25px;
+  }
+  #event2left #event2img{
+    left: -90px;
+    top: 145px;
+    width: 250px;
+    height: 200px;
+  }
+  #event2deco{
+    height: 252px;
+    top: 14px;
+  }
+}
+
+@media all and (max-device-width : 480px) {
+  #textevent{
+    font-size: 80px;
+    left: 30%;
+    top: 130px;
+  }
+  /* EVENT 1 */
+  #imgevent{
+    top: 400px;
+    left: 180px;
+  }
+  #event1left #event1H{
+    font-size: 45px;
+    top: 21px;
+    left: -120px;
+    width: 520px;
+  }
+  #event1left #event1Pcolor{
+    font-size: 35px;
+    top: 70px;
+  }
+  #event1left #event1P{
+    font-size: 35px;
+    width: 550px;
+    left: -170px;
+  }
+  #event1left #event1deco{
+    left: 400px;
+  }
+  #event1right #eventDate{
+    font-size: 32px;
+    left: 65px;
+  }
+  #event1right #eventDate #event1imgCalendar{
+    left: -45px;
+  }
+  #event1right #eventDate #event1plus{
+    font-size: 30px;
+    left: -40px;
+  }
+  #event1right #event1img{
+    width: 315px;
+    height: 310px;
+  }
+
+  /* EVENT 2 */
+  #img1event{
+    top: 540px;
+    left: 150px;
+  }
+  #event2right #event2H{
+    font-size: 45px;
+    width: 280px;
+  }
+  #event2right #event2Pcolor{
+    font-size: 35px;
+    width: 600px;
+    top: 70px;
+  }
+  #event2right #event2P{
+    font-size: 35px;
+    top: 133px;
+    width: 500px;
+  }
+  #event2left{
+    width: 160px;
+    top: -20px;
+    left: 20px;
+  }
+  #event2left #event2Date #event2imgCalendar{
+    width: 50px;
+    height: 50px;
+    top: -3px;
+    left: -60px;
+  }
+  #event2left #event2Date #event2plus{
+    top: 30px;
+  }
+  #event2left #event2img{
+    left: -150px;
+    top: 165px;
+    width: 310px;
+  }
+  #event2deco{
+    height: 306px;
+  }
 }
 </style>
