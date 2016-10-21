@@ -171,7 +171,7 @@ export default {
   }
 }
 
-/* MOBILE */
+/* --------------------  MOBILE  -------------------- */
 
 @media all and (max-device-width : 1024px) {
   #titre-home{
@@ -199,65 +199,61 @@ export default {
 
 @media all and (max-device-width: 768px) {
   #titre-home{
+    text-align: left;
     top : 60px;
-    left : 35%;
-    font-size: 35px;
+    left : 45%;
+    font-size: 55px;
   }
   #texthome{
-      top : 150px;
+      top : 250px;
       left : 40%;
-      font-size: 25px;
+      font-size: 40px;
   }
 
   #imghome{
-    width : 100%;
-    max-width: 480px;
-    top : 350px;
-    left : 25%;
+    width : 760px;
+    height: 427.5px;
+    top : 450px;
+    left :10%;
   }
 
   #descriptionhome {
     top : inherit;
-    bottom : 10%;
-    left : 25%;
-    font-size: 20px;
+    bottom : 15%;
+    left : 10%;
+    font-size: 40px;
   }
 }
 
 @media all and (max-device-width : 480px) {
 
   #titre-home{
-    top : 11%;
-    left : 50%;
+    top : 150px;
+    left : 45%;
     width: 25%;
-    font-size: 300%;
+    font-size: 55px;
   }
 
   #texthome{
-    text-align: right;
-    position: absolute;
-    top : 35%;
-    left : 38%;
-    font-size: 250%;
-    font-family: "futura-book";
+    top : 350px;
+    left : 30%;
+    font-size: 40px;
   }
 
-    #imghome{
-        text-align: right;
-        position: absolute;
-        width: 75%;
-        height: 30%;
-        top : 40%;
-        left : 13%;
-    }
+  #imghome{
+      width:800px;
+      max-width: none;
+      height: 450px;
+      top : 600px;
+      left : 10%;
+  }
 
-    #descriptionhome {
-        text-align: left;
-        position: absolute;
-        top : 72%;
-        left : 13%;
-        font-size: 200%;
-        font-family: "futura-light";
-    }
+  #descriptionhome {
+      top : inherit;
+      bottom: 150px;
+      left : 13%;
+      font-size: 40px;
+      font-family: "futura-light";
+  }
 }
 </style>
