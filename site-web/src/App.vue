@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     <header-nav></header-nav>
-    <home-nav v-if = "currentView == 'home'"></home-nav>
-    <about v-if = "currentView == 'about'"></about>
-    <evenements v-if = "currentView == 'event'"></evenements>
-    <transmission v-if = "currentView == 'transmission'"></transmission>
-    <mecenat v-if = "currentView == 'mecenat'"></mecenat>
-    <contact v-if = "currentView == 'contact'"></contact>
+    <div class="container">
+      <home-nav v-if = "currentView == 'home'"></home-nav>
+      <about v-if = "currentView == 'about'"></about>
+      <evenements v-if = "currentView == 'event'"></evenements>
+      <transmission v-if = "currentView == 'transmission'"></transmission>
+      <mecenat v-if = "currentView == 'mecenat'"></mecenat>
+      <contact v-if = "currentView == 'contact'"></contact>
+    </div>
+
   </div>
 </template>
 
@@ -65,6 +68,14 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.container{
+    position:fixed;
+   -webkit-perspective:100px;
+   -webkit-perspective-origin:50% 50%;
+    width: 100%;
+    min-height: 900px;
 }
 
 #app a {
