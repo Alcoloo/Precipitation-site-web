@@ -112,7 +112,7 @@ export default {
     width: 28%;
     font-size: 150%;
     top : 25%;
-    left : 18%;
+    left : 19%;
 }
 
 /*-------------- FORMULAIRE --------------*/
@@ -198,7 +198,8 @@ export default {
 .bouton .col-md-4{
     position: fixed;
     text-align: center;
-    font-family: "futura-book";
+    font-family: "futura-light";
+    font-size: larger;
     width : 5%;
     top : 70%;
     left : 30%;
@@ -207,6 +208,12 @@ export default {
     padding: 0.3%;
     background-color: #e08ba2;
 }
+
+button
+{
+  background: none;
+}
+
 
 /*--------------FIN FORMULAIRE --------------*/
 
@@ -217,7 +224,7 @@ export default {
     text-align: left;
     position: fixed;
     font-size: 90%;
-    top : 75%;
-    left : 18%;
+    top : 77%;
+    left : 19%;
 }
 </style>
