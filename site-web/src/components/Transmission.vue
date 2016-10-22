@@ -40,8 +40,6 @@ export default {
 
 #transmission1{
     position: absolute;
-    -webkit-transform:translateZ(-148px);
-    -moz-transform:translateZ(-148px);
     opacity: 1;
     height: 100%;
     width: 100%;
@@ -51,19 +49,19 @@ export default {
 #titre-transmission{
     text-align: right;
     position: absolute;
-    top : 7%;
-    left : 30%;
+    top : 30px;
+    left : 35%;
     font-family: "Gotham Medium";
-    font-size: 350%;
+    font-size: 50px;
 }
 
 #texttransmission{
     text-align: left;
     position: relative;
-    top : 15%;
+    top : 110px;
     left : 22%;
-    width: 37%;
-    font-size: 135%;
+    width: 600px;
+    font-size: 21px;
     font-family:"futura-light";
 }
 
@@ -73,19 +71,19 @@ export default {
     background-image: url('../assets/img/img1-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 23%;
-    width: 23%;
-    top : 60%;
-    left : 20%;
+    height: 155px;
+    width: 240px;
+    top: 450px;
+    left: 20%;
 }
 
 #img1transmissiontext{
     text-align: right;
     position: absolute;
-    top : 55%;
-    left : 20%;
-    font-family:"futura-light";
-    font-size: 150%;
+    top: 410px;
+    left: 20%;
+    font-family: "futura-light";
+    font-size: 19px;
 }
 
 #img2transmission{
@@ -94,18 +92,18 @@ export default {
     background-image: url('../assets/img/img2-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 23%;
-    width: 23%;
-    top : 30%;
-    left : 20%;
+    height: 155px;
+    width: 240px;
+    top: 250px;
+    left: 20%;
 }
 #img2transmissiontext{
     text-align: right;
     position: absolute;
-    top : 55%;
-    left : 40%;
-    font-family:"futura-light";
-    font-size: 150%;
+    top: 410px;
+    left: 50%;
+    font-family: "futura-light";
+    font-size: 19px;
 }
 
 #img3transmission{
@@ -114,17 +112,254 @@ export default {
     background-image: url('../assets/img/img3-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 23%;
-    width: 23%;
-    top : 30%;
-    left : 40%;
+    height: 155px;
+    width: 240px;
+    top: 250px;
+    left: 50%;
 }
 #img3transmissiontext{
     text-align: right;
     position: absolute;
-    top : 85%;
-    left : 20%;
-    font-family:"futura-light";
-    font-size: 150%;
+    top: 610px;
+    left: 20%;
+    font-family: "futura-light";
+    font-size: 19px;
+}
+
+@media all and (max-width : 1024px) {
+  #titre-transmission{
+    font-size: 45px;
+    left: 30%;
+  }
+  #texttransmission{
+    font-size: 20px;
+    left: 20%;
+    width: 450px;
+  }
+
+  #img2transmission{
+    width: 220px;
+    top: 280px;
+    left: 15%;
+  }
+  #img1transmissiontext{
+    font-size: 18px;
+    left: 15%;
+    top: 430px;
+  }
+
+  #img3transmission{
+    height: 155px;
+    width: 220px;
+    top: 280px;
+  }
+  #img2transmissiontext{
+    font-size: 18px;
+    top: 430px;
+  }
+
+  #img1transmission{
+    width: 220px;
+    top: 480px;
+    left: 15%;
+  }
+  #img3transmissiontext{
+    top: 630px;
+    left: 15%;
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width : 768px) {
+  #titre-transmission{
+    font-size: 30px;
+    left: 35%;
+  }
+  #texttransmission{
+    font-size: 22px;
+    left: 15%;
+    width: 400px;
+  }
+
+  #img2transmission{
+    width: 200px;
+    top: 350px;
+    left: 10%;
+  }
+  #img1transmissiontext{
+    font-size: 18px;
+    left: 10%;
+    top: 490px;
+  }
+
+  #img3transmission{
+    height: 155px;
+    width: 200px;
+    top: 350px;
+    left: 55%;
+  }
+  #img2transmissiontext{
+    font-size: 18px;
+    top: 490px;
+    left: 55%;
+  }
+
+  #img1transmission{
+    width: 200px;
+    top: 530px;
+    left: 10%;
+  }
+  #img3transmissiontext{
+    top: 670px;
+    left: 10%;
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width : 480px) {
+  #titre-transmission{
+    font-size: 25px;
+    left: 30%;
+  }
+  #texttransmission{
+    font-size: 20px;
+    left: 5%;
+    top: 80px;
+    width: 320px;
+  }
+
+  #img2transmission{
+    width: 150px;
+    top: 310px;
+    left: 20%;
+  }
+  #img1transmissiontext{
+    font-size: 16px;
+    left: 20%;
+    top: 410px;
+  }
+
+  #img3transmission{
+    height: 155px;
+    width: 150px;
+    top: 440px;
+    left: 20%;
+  }
+  #img2transmissiontext{
+    font-size: 16px;
+    top: 540px;
+    left: 20%;
+  }
+
+  #img1transmission{
+    width: 150px;
+    top: 570px;
+    left: 20%;
+  }
+  #img3transmissiontext{
+    top: 670px;
+    left: 20%;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-device-width : 1024px) {
+  #titre-transmission{
+    font-size: 65px;
+    top: 80px;
+    left: 30%;
+  }
+  #texttransmission{
+    font-size: 35px;
+    left: 20%;
+    top: 200px;
+    width: 600px;
+  }
+
+  #img2transmission{
+    width: 300px;
+    height: 300px;
+    top: 600px;
+    left: 120px;
+  }
+  #img1transmissiontext{
+    font-size: 28px;
+    left: 120px;
+    top: 820px;
+  }
+
+  #img3transmission{
+    height: 300px;
+    width: 300px;
+    top: 600px;
+    left: 500px;
+  }
+  #img2transmissiontext{
+    font-size: 28px;
+    top: 820px;
+    left: 500px;
+  }
+
+  #img1transmission{
+    width: 300px;
+    height: 300px;
+    top: 900px;
+    left: 120px;
+  }
+  #img3transmissiontext{
+    top: 1110px;
+    left: 120px;
+    font-size: 28px;
+  }
+}
+
+@media all and (max-device-width : 480px) {
+  #titre-transmission{
+    font-size: 60px;
+    top: 60px;
+    left: 30%;
+  }
+  #texttransmission{
+    font-size: 40px;
+    left: 150px;
+    top: 200px;
+    width: 650px;
+  }
+
+  #img2transmission{
+    width: 380px;
+    height: 300px;
+    top: 700px;
+    left: 100px;
+  }
+  #img1transmissiontext{
+    font-size: 32px;
+    left: 100px;
+    top: 960px;
+  }
+
+  #img3transmission{
+    height: 300px;
+    width: 380px;
+    top: 700px;
+    left: 530px;
+  }
+  #img2transmissiontext{
+    font-size: 32px;
+    top: 960px;
+    left: 530px;
+  }
+
+  #img1transmission{
+    width: 380px;
+    height: 300px;
+    top: 1050px;
+    left: 100px;
+  }
+  #img3transmissiontext{
+    top: 1320px;
+    left: 100px;
+    font-size: 28px;
+  }
 }
 </style>
