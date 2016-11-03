@@ -346,7 +346,7 @@ export default {
   }
   #img2transmissiontext{
     font-size: 32px;
-    top: 960px;
+    top: 820px;
     left: 530px;
   }
 

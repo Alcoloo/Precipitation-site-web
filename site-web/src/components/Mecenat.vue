@@ -56,8 +56,6 @@ export default {
 
 #mecenat1{
     position: absolute;
-    -webkit-transform:translateZ(-198px);
-    -moz-transform:translateZ(-198px);
     opacity: 1;
     height: 100%;
     width: 100%;

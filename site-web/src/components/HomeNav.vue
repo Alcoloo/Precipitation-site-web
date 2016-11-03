@@ -5,10 +5,12 @@
                 <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
                 <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
             </div>
+            <backgrounds></backgrounds>
 
 </template>
 
 <script>
+import Backgrounds from './Backgrounds.vue'
 export default {
   data () {
     return {
@@ -17,6 +19,9 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
     }
+  },
+  components:{
+    Backgrounds,
   }
 }
 </script>

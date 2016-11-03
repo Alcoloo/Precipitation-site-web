@@ -77,6 +77,7 @@ body{
     width: 100%;
     min-height: 900px;
     height: 100vh;
+    z-index: -1;
 }
 
 #app a {

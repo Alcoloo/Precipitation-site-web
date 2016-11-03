@@ -89,8 +89,6 @@ export default {
 
 #contact1{
     position: absolute;
-    -webkit-transform:translateZ(-248px);
-    -moz-transform:translateZ(-248px);
     opacity: 1;
     height: 100%;
     width: 100%;
