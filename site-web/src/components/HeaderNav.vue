@@ -66,28 +66,24 @@ export default {
     src: url('../assets/Futura_Std/FuturaStd-Light.otf') ;
 }
 
-* {
-margin: 0;
-padding: 0;
+*
+{
+  margin: 0;
+  padding: 0;
 }
 
-button{
-        font-family: "futura-light";
-        border: none;
-        background: none;
-        outline: none;
-        font-size: larger;
-    }
+button
+{
+  font-family: "futura-light";
+  border: none;
+  background: none;
+  outline: none;
+  font-size: larger;
+}
 
  li button {
       text-decoration: none;
       color: white;
-
-      /* transitions & animations
-      transition: all .5s ease;
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -o-transition: all .5s ease; */
     }
 
     li button:hover {
@@ -98,35 +94,47 @@ button{
       font-weight:bold;
       color: #e08ba2;
     }
-#header{
+
+#header
+{
   background: rgb(166, 43, 72);
   width: 100%;
-  padding: 20px 0;
+  padding: 1px 0;
   color: white;
   text-transform: uppercase;
   text-align: center;
 }
-a{
+
+a
+{
   text-decoration: none;
   color: inherit;
 }
-nav ul{
+
+nav ul
+{
   background-color: rgb(166, 43, 72);
   overflow: hidden;
   color: white;
   text-align: center;
   transition: 0.4s;
 }
-nav ul li{
+
+nav ul li
+{
   display: inline-block;
-  padding: 1%;
-    font-size: 150%;
+  padding: 20px;
+  font-size: 15px;
 }
-nav ul li:hover{
+
+nav ul li:hover
+{
   background-color: rgb(166, 43, 72);
   color:#333;
 }
-section{
+
+section
+{
   line-height: 1.5em;
   padding: 20px;
   margin: 0 auto;

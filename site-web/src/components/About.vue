@@ -36,8 +36,6 @@ export default {
 
 #about1{
     position: absolute;
-    -webkit-transform:translateZ(-48px);
-    -moz-transform:translateZ(-48px);
     opacity: 1;
     height: 100%;
     width: 100%;
@@ -48,10 +46,10 @@ export default {
 #textabout{
     text-align: right;
     position: absolute;
-    font-size: 350%;
-    top : 10%;
-    left : 30%;
     font-weight: bold;
+    font-size: 40px;
+    top : 110px;
+    left : 30%;
 }
 
 #text0about{
@@ -71,20 +69,154 @@ export default {
     background-image: url('../assets/img/img-apropos.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 33%;
-    width: 41%;
-    top : 28%;
-    left : 16.4%;
+    width: 800px;
+    top : 265px;
+    left : 15.75%;
+    height: 100%;
 }
 
 #descriptionabout {
     text-align: left;
     font-family: 'futura-light';
+    position: absolute;
+    font-size:16px;
+    width: 800px;
+    top : 630px;
+    left : 15.75%;
+}
+
+@media all and (max-width : 1024px){
+
+  #textabout
+  {
+    font-size: 38px;
+    top : 100px;
+    left : 40%;
+  }
+
+  #imgabout
+  {
+    width : 540px;
+    top : 250px;
+    left : 25.5%;
+  }
+
+  #descriptionabout
+  {
+    font-size:20px;
+    width: 540px;
+    top : 500px;
+    left : 25.5%;
+  }
+
+}
+
+@media all and (max-width : 960px){
+
+  #textabout
+  {
+    font-size: 38px;
+    top : 100px;
+    left : 37%;
+  }
+
+  #imgabout
+  {
+    width : 540px;
+    top : 250px;
+    left : 22.5%;
+  }
+
+  #descriptionabout
+  {
+    font-size:20px;
+    width: 540px;
+    top : 500px;
+    left : 22.5%;
+  }
+
+}
+
+@media all and (max-width : 768px){
+
+  #textabout
+  {
+    font-size: 30px;
+    top : 150px;
+    left : 35%;
+  }
+
+  #imgabout
+  {
+    width: 350px;
+    top : 300px;
+    left : 25%;
+  }
+
+  #descriptionabout
+  {
+    font-size:15px;
+    width: 350px;
+    top : 500px;
+    left : 25%;
+  }
+
+}
+
+@media all and (max-width : 650px){
+
+  #textabout
+  {
+    font-size: 30px;
+    top : 150px;
+    left : 35%;
+  }
+
+  #imgabout
+  {
+    width: 350px;
+    top : 300px;
+    left : 25.5%;
+  }
+
+  #descriptionabout
+  {
+    font-size:15px;
+    width: 350px;
+    top : 500px;
+    left : 25.5%;
+  }
+
+}
+
+@media all and (max-width:480px) {
+
+  #textabout
+  {
+    font-size: 350%;
+    top : 130px;
+    left : 34%;
+  }
+
+  #imgabout
+  {
+    height: 33%;
+    width: 41%;
+    top : 360px;
+    left : 16.4%;
+  }
+
+  #descriptionabout
+  {
     font-size:125%;
     position: absolute;
     width: 42%;
-    top : 65%;
+    top : 800px;
     left : 16.4%;
+  }
+
+
 }
+
 
 </style>

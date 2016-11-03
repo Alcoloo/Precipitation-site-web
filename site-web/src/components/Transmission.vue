@@ -49,19 +49,19 @@ export default {
 #titre-transmission{
     text-align: right;
     position: absolute;
-    top : 30px;
-    left : 35%;
+    top : 60px;
+    left : 30%;
     font-family: "Gotham Medium";
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #texttransmission{
     text-align: left;
     position: relative;
-    top : 110px;
+    top : 140px;
     left : 22%;
-    width: 600px;
-    font-size: 21px;
+    width: 680px;
+    font-size: 15px;
     font-family:"futura-light";
 }
 
@@ -71,19 +71,19 @@ export default {
     background-image: url('../assets/img/img1-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 155px;
-    width: 240px;
-    top: 450px;
-    left: 20%;
+    height: 225px;
+    width: 400px;
+    top: 580px;
+    left: 19.5%;
 }
 
 #img1transmissiontext{
     text-align: right;
     position: absolute;
-    top: 410px;
-    left: 20%;
+    top: 530px;
+    left: 19.5%;
     font-family: "futura-light";
-    font-size: 19px;
+    font-size: 17px;
 }
 
 #img2transmission{
@@ -92,18 +92,18 @@ export default {
     background-image: url('../assets/img/img2-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 155px;
-    width: 240px;
-    top: 250px;
-    left: 20%;
+    height: 225px;
+    width : 400px;
+    top: 285px;
+    left: 19.5%;
 }
 #img2transmissiontext{
     text-align: right;
     position: absolute;
-    top: 410px;
-    left: 50%;
+    top: 530px;
+    left: 40%;
     font-family: "futura-light";
-    font-size: 19px;
+    font-size: 17px;
 }
 
 #img3transmission{
@@ -112,18 +112,18 @@ export default {
     background-image: url('../assets/img/img3-transmission.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 155px;
-    width: 240px;
-    top: 250px;
-    left: 50%;
+    height: 225px;
+    width: 400px;
+    top: 285px;
+    left: 40%;
 }
 #img3transmissiontext{
     text-align: right;
     position: absolute;
-    top: 610px;
-    left: 20%;
+    top: 830px;
+    left: 19.5%;
     font-family: "futura-light";
-    font-size: 19px;
+    font-size: 17px;
 }
 
 @media all and (max-width : 1024px) {

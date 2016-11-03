@@ -72,8 +72,6 @@ body{
 
 .container{
     position:fixed;
-   -webkit-perspective:100px;
-   -webkit-perspective-origin:50% 50%;
     width: 100%;
     min-height: 900px;
     height: 100vh;

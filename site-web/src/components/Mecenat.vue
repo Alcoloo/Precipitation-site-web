@@ -56,8 +56,6 @@ export default {
 
 #mecenat1{
     position: absolute;
-    -webkit-transform:translateZ(-198px);
-    -moz-transform:translateZ(-198px);
     opacity: 1;
     height: 100%;
     width: 100%;
@@ -67,38 +65,38 @@ export default {
 #textmecenat{
     font-family: "Gotham Medium";
     text-align: right;
-    font-size: 400%;
+    font-size: 50px;
     position: absolute;
-    top : 10%;
-    left : 35%;
+    top : 85px;
+    left : 34.5%;
 }
 
 
 #defMecenat{
     text-align: left;
     font-family: "futura-light";
-    font-size: 135%;
+    font-weight: bold;
+    font-size: 16px;
     position: absolute;
-    height: 10%;
-    width: 35%;
-    top : 21%;
-    left : 21%;
+    width: 710px;
+    top : 195px;
+    left : 20.5%;
 }
 
 #descriptionmecenat {
     font-family: "futura-book";
     text-align: left;
     position: absolute;
-    top : 37%;
-    left : 10%;
-    width: 50%;
-    height: 20%;
-    font-size:145%;
+    font-weight: bold;
+    top : 355px;
+    left : 9.25%;
+    width: 972px;
+    font-size:17px;
 }
 
 #titreAvantage{
     font-family: "futura-heavy";
-    font-size: 225%;
+    font-size: 32px;
     text-align: left;
 }
 
@@ -106,18 +104,17 @@ export default {
     font-family: "futura-book";
     text-align: left;
     position: absolute;
-    top : 60%;
-    left : 12.1%;
-    width: 45%;
-    height: 20%;
-    font-size: 135%;
+    top : 560px;
+    left : 11.25%;
+    width : 830px;
+    font-size: 16px;
 }
 
 #decoAvantages{
     position: absolute;
-    width: 1.5%;
-    height: 115%;
-    top : 2%;
+    width: 13px;
+    height: 225px;
+    top : 23px;
     left : -5%;
     background-color: rgb(166, 43, 72);
 }

@@ -87,124 +87,130 @@ export default {
     src: url('../assets/Futura_Std/FuturaStd-Book.otf') ;
 }
 
-#contact1{
-    position: absolute;
-    -webkit-transform:translateZ(-248px);
-    -moz-transform:translateZ(-248px);
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+#contact1
+{
+  position: absolute;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
-#textcontact{
-    font-family: "Gotham Medium";
-   text-align: right;
-    position: fixed;
-    font-size: 350%;
-    top : 10%;
-    left : 34%;
+#textcontact
+{
+  font-family: "Gotham Medium";
+  text-align: right;
+  position: fixed;
+  font-size: 40px;
+  top : 150px;
+  left : 34%;
 }
-#text1contact{
-    font-family: "futura-book";
-   text-align: left;
-    position: fixed;
-    width: 28%;
-    font-size: 150%;
-    top : 25%;
-    left : 19%;
+
+#text1contact
+{
+  font-family: "futura-book";
+  text-align: left;
+  position: fixed;;
+  width : 530px;
+  font-weight: bold;
+  font-size: 16px;
+  top : 300px;
+  left : 17.5%;
 }
 
 /*-------------- FORMULAIRE --------------*/
 
-#formulaire{
+#formulaire
+{
     position : relative;
-    width:50%;
     height: auto;
 }
-.form-horizontal{
+
+.form-horizontal
+{
     position: fixed;
-    width: 50%;
-    height: auto;
-    top : 45%;
-    left : 18%;
-    font-size: 150%;
+    left : 16.5%;
+    font-size: 17px;
     color : white;
 }
+
 .col-md-4{
     background-color: rgb(166, 43, 72);
 }
-.form-control{
+
+.form-control
+{
     background-color: rgb(166, 43, 72);
-    font-size: 100%;
+    font-size: 17px;
     color : white;
-    width:220%;
+    width:500px;
 }
 
-*{
+*
+{
     border :0px;
 }
-.name{
+
+.name
+{
     font-family: "futura-light";
     background-color: rgb(166, 43, 72);
     position: fixed;
-    width : 30%;
-    top : 40%;
-    height: inherit;
-    padding: 0.3%;
-}
-.email{
-    font-family: "futura-light";
-    background-color: rgb(166, 43, 72);
-    position: fixed;
-    width : 30%;
-    top : 46%;
-    height: inherit;
-    padding: 0.3%;
-}
-.sujet{
-    font-family: "futura-light";
-    background-color: rgb(166, 43, 72);
-    position: fixed;
-    width : 30%;
-    top : 52%;
+    width : 575px;
+    top : 450px;
     height: inherit;
     padding: 0.3%;
 }
 
-.message{
+.email
+{
+    font-family: "futura-light";
+    background-color: rgb(166, 43, 72);
+    position: fixed;
+    width : 575px;
+    top : 510px;
+    height: inherit;
+    padding: 0.3%;
+}
+.sujet
+{
+    font-family: "futura-light";
+    background-color: rgb(166, 43, 72);
+    position: fixed;
+    width : 575px;
+    top : 570px;
+    height: inherit;
+    padding: 0.3%;
+}
+
+.message
+{
     font-family: "futura-light";
     position: fixed;
     background-color: rgb(166, 43, 72);
-    width : 30%;
-    height: 10%;
-    top : 58%;
+    width : 575px;
+    height: 100px;
+    top : 630px;
     padding: 0.3%;
 }
-#divMessageForm{
-    font-family: "futura-light";
-    height:70%;
-    width: 100%;
-}
-#messageForm{
-    height:80%;
-    width: 80%;
-    font-size: 150%;
-    color : white;
-    resize: none;
 
+
+#messageForm
+{
+  width : 570px;
+  font-size: 17px;
+  color : white;
+  resize: none;
 }
 
 .bouton .col-md-4{
     position: fixed;
     text-align: center;
     font-family: "futura-light";
-    font-size: larger;
-    width : 5%;
-    top : 70%;
+    width: 100px;
+    top : 750px;
     left : 30%;
-    font-size: 50%;
-    height: inherit;
+    font-size: 13px;
     padding: 0.3%;
     background-color: #e08ba2;
 }
@@ -223,8 +229,8 @@ button
     font-family: "futura-light";
     text-align: left;
     position: fixed;
-    font-size: 90%;
-    top : 77%;
-    left : 19%;
+    font-size: 14px;
+    top : 800px;
+    left : 17.5%;
 }
 </style>

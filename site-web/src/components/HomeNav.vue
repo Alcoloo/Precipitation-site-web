@@ -2,8 +2,7 @@
             <div id="home1" class="info">
                 <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
                 <div id="texthome">LE BAROQUE, AUTREMENT.</div>
-                <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
-                <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
+                <video id="imghome" controls ><source src="src/assets/video/myVideo.mp4" type="video/mp4"></video>
             </div>
 
 </template>
@@ -50,30 +49,32 @@ export default {
 #titre-home{
     text-align: center;
     position: absolute;
-    top : 80px;
-    left : 26%;
-    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    top : 90px;
+    left : 24.5%;
+    font-size: 30px;
     font-family: "Gotham Medium";
 }
 
 #texthome{
     text-align: right;
     position: absolute;
-    top : 150px;
-    left : 31.5%;
-    font-size: 25px;
+    top : 235px;
+    left : 27.5%;
+    font-size: 20px;
     font-family: "futura-book";
 }
 
 #imghome{
     text-align: right;
     position: absolute;
-    width: 480px;
-    height: 300px;
-    top : 230px;
-    left : 22.5%;
-    background-image: url('../assets/video/MyPoster.jpg');
-    background-size: contain;
+    width: 600px;
+    height: 350px;
+    top : 350px;
+    left : 17.5%;
+    /*background-image: url('../assets/video/MyPoster.jpg');
+    background-size: contain;*/
 }
 
 #descriptionhome {
@@ -87,18 +88,18 @@ export default {
 
 @media all and (max-width : 1024px) {
   #titre-home{
-      top : 60px;
+      top : 100px;
       left : 28%;
       font-size: 35px;
   }
   #texthome{
-      top : 130px;
+      top : 200px;
       left : 31.5%;
       font-size: 22px;
   }
 
   #imghome{
-      top : 200px;
+      top : 300px;
       left : 20%;
   }
 
