@@ -1,11 +1,13 @@
 <template>
-            <div id="home1" class="info">
-                <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
-                <div id="texthome">LE BAROQUE, AUTREMENT.</div>
-                <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
-                <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
-            </div>
-            <backgrounds></backgrounds>
+  <div class="home-container">
+    <div id="home1" class="info">
+      <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
+      <div id="texthome">LE BAROQUE, AUTREMENT.</div>
+      <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
+      <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
+    </div>
+    <backgrounds></backgrounds>
+  </div>
 
 </template>
 
@@ -21,11 +23,10 @@ export default {
     }
   },
   components:{
-    Backgrounds,
+    Backgrounds
   }
 }
 </script>
-
 
 <style scoped>
 
@@ -47,7 +48,6 @@ export default {
 #home1{
     position: absolute;
     height: 100%;
-    opacity: 1;
     width: 100%;
     z-index: 1;
 }

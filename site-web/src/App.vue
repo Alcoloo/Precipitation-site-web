@@ -2,14 +2,10 @@
   <div id="app">
     <header-nav></header-nav>
     <div class="container">
-      <home-nav v-if = "currentView == 'home'"></home-nav>
-      <about v-if = "currentView == 'about'"></about>
-      <evenements v-if = "currentView == 'event'"></evenements>
-      <transmission v-if = "currentView == 'transmission'"></transmission>
-      <mecenat v-if = "currentView == 'mecenat'"></mecenat>
-      <contact v-if = "currentView == 'contact'"></contact>
+        <component :is="currentView" transition="fade" transition-mode="out-in" keep-alive></component>
+          <!-- component changes when vm.currentView changes! -->
+        </component>
     </div>
-
   </div>
 </template>
 
@@ -21,7 +17,6 @@ import Evenements from './components/Evenements'
 import Transmission from './components/Transmission'
 import Mecenat from './components/Mecenat.vue'
 import Contact from './components/Contact.vue'
-
 export default {
   data () {
     return {
@@ -34,12 +29,12 @@ export default {
   },
   components: {
     HeaderNav,
-    HomeNav,
-    About,
-    Evenements,
-    Transmission,
-    Mecenat,
-    Contact,
+    'home' : HomeNav,
+    'about' : About,
+    'event' : Evenements,
+    'transmission' : Transmission,
+    'mecenat' : Mecenat,
+    'contact' : Contact
   }
 }
 </script>
@@ -72,12 +67,17 @@ body{
 
 .container{
     position:fixed;
-   -webkit-perspective:100px;
-   -webkit-perspective-origin:50% 50%;
     width: 100%;
     min-height: 900px;
     height: 100vh;
     z-index: -1;
+}
+.fade-transition {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter, .fade-leave {
+  opacity: 0;
 }
 
 #app a {

@@ -1,17 +1,28 @@
 <template>
-  <div class="bottom1"></div>
-  <div class="top1"></div>
-  <div class="bottom2"></div>
-  <div class="top2"></div>
-  <div class="bottom3"></div>
-  <div class="top3"></div>
+  <div id="backgrounds">
+    <div class="bottom1"></div>
+    <div class="top1"></div>
+    <div class="bottom2"></div>
+    <div class="top2"></div>
+    <div class="bottom3"></div>
+    <div class="top3"></div>
+  </div>
 </template>
 
 <script>
-
+export default {
+  data () {
+    return {
+      // note: changing this line won't causes changes
+      // with hot-reload because the reloaded component
+      // preserves its current state and we are modifying
+      // its initial state.
+    }
+  }
+}
 </script>
 
-<style >
+<style scoped>
 .top1{
   background: url('../assets/img/top1.png') no-repeat left top;
   -webkit-background-size: contain;
