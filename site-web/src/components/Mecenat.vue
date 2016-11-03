@@ -123,4 +123,82 @@ export default {
     font-family: 'futura-light-oblique';
 }
 
+@media all and (max-width : 1024px)
+{
+  #defMecenat
+  {
+    width: 500px;
+    top : 195px;
+    left : 20.5%;
+  }
+
+  #descriptionmecenat {
+      left : 20%;
+      width: 500px;
+      font-size:17px;
+  }
+
+  #avantageMecenat
+  {
+    top : 600px;
+    left : 26%;
+  }
+}
+
+@media all and (max-width : 768px)
+{
+
+  #textmecenat{
+      top : 85px;
+      left : 28%;
+  }
+
+  #defMecenat
+  {
+    width: 400px;
+    top : 195px;
+    left : 18%;
+  }
+
+  #descriptionmecenat {
+      left : 18%;
+      width: 400px;
+      font-size:17px;
+  }
+
+  #avantageMecenat
+  {
+    top : 600px;
+    left : 24%;
+  }
+}
+
+@media all and (max-width : 680px)
+{
+
+  #textmecenat{
+      top : 85px;
+      left : 25%;
+  }
+
+  #defMecenat
+  {
+    width: 400px;
+    top : 195px;
+    left : 15%;
+  }
+
+  #descriptionmecenat {
+      left : 15%;
+      width: 400px;
+      font-size:17px;
+  }
+
+  #avantageMecenat
+  {
+    top : 600px;
+    left : 22%;
+  }
+}
+
 </style>
