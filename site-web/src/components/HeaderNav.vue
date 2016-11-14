@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li id ="lihome" v-bind:class="{active:isHome}"><button id="homeButton" v-on:click="switchView('home')">ACCUEIL</button></li>
-        <li id ="liabout" v-bind:class="{active:isAbout}"><button id="aboutButton" v-on:click="switchView('about')">À PROPOS</button></li>
+        <li id ="liabout" v-bind:class="{active:isAbout}"><button id="aboutButton" v-on:click="switchView('about')">QUI SOMMES NOUS ?</button></li>
         <li id ="lievent" v-bind:class="{active:isEvent}"><button id="eventButton"  v-on:click="switchView('event')">EVÈNEMENTS</button></li>
         <li id ="litransmission" v-bind:class="{active:isTransmission}"><button id="transmissionButton"  v-on:click="switchView('transmission')">TRANSMISSION</button></li>
         <li id ="limecenat" v-bind:class="{active:isMecenat}"><button id="mecenatButton"  v-on:click="switchView('mecenat')">MÉCENAT</button></li>
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 @font-face {
     font-family: "futura-light";
     src: url('../assets/Futura_Std/FuturaStd-Light.otf') ;
@@ -103,7 +103,6 @@ button
   color: white;
   text-transform: uppercase;
   text-align: center;
-  z-index: 99;
 }
 
 a

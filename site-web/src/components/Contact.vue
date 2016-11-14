@@ -87,7 +87,6 @@ export default {
     src: url('../assets/Futura_Std/FuturaStd-Book.otf') ;
 }
 
-<<<<<<< HEAD
 #contact1
 {
   position: absolute;
@@ -95,13 +94,6 @@ export default {
   height: 100%;
   width: 100%;
   z-index: 1;
-=======
-#contact1{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
->>>>>>> develop
 }
 
 #textcontact
@@ -240,5 +232,61 @@ button
     font-size: 14px;
     top : 800px;
     left : 17.5%;
+}
+
+@media all and (max-width : 768px)
+{
+  #text1contact
+  {
+    width : 400px;
+    left : 12%;
+  }
+
+  .form-horizontal
+  {
+      left : 8%;
+  }
+
+  .form-control
+  {
+      font-size: 17px;
+      color : white;
+      width:320px;
+  }
+
+  .name
+  {
+      width : 400px;
+      top : 450px;
+  }
+
+  .email
+  {
+      width : 400px;
+  }
+  .sujet
+  {
+      width : 400px;
+  }
+
+  .message
+  {
+      width : 400px;
+  }
+
+
+  #messageForm
+  {
+    width : 390px;
+    height : 70px;
+  }
+
+  .bouton .col-md-4{
+      left : 40%;
+  }
+
+  #descriptioncontact {
+      left : 12%;
+  }
 }
 </style>
