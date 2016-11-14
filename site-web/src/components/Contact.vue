@@ -87,6 +87,7 @@ export default {
     src: url('../assets/Futura_Std/FuturaStd-Book.otf') ;
 }
 
+<<<<<<< HEAD
 #contact1
 {
   position: absolute;
@@ -94,6 +95,13 @@ export default {
   height: 100%;
   width: 100%;
   z-index: 1;
+=======
+#contact1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+>>>>>>> develop
 }
 
 #textcontact

@@ -1,13 +1,26 @@
 <template>
+<<<<<<< HEAD
             <div id="home1" class="info">
                 <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
                 <div id="texthome">LE BAROQUE, AUTREMENT.</div>
                 <video id="imghome" controls ><source src="src/assets/video/myVideo.mp4" type="video/mp4"></video>
             </div>
+=======
+  <div class="home-container">
+    <div id="home1" class="info">
+      <div id="titre-home">ENSEMBLE PRÉCIPITATIONS</div>
+      <div id="texthome">LE BAROQUE, AUTREMENT.</div>
+      <video id="imghome" controls src="src/assets/video/myVideo.mp4"></video>
+      <div id="descriptionhome">Quand la musique baroque... <br>... rencontre les technologies de l'image.</div>
+    </div>
+    <backgrounds></backgrounds>
+  </div>
+>>>>>>> develop
 
 </template>
 
 <script>
+import Backgrounds from './Backgrounds.vue'
 export default {
   data () {
     return {
@@ -16,10 +29,12 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
     }
+  },
+  components:{
+    Backgrounds
   }
 }
 </script>
-
 
 <style scoped>
 
@@ -41,7 +56,6 @@ export default {
 #home1{
     position: absolute;
     height: 100%;
-    opacity: 1;
     width: 100%;
     z-index: 1;
 }

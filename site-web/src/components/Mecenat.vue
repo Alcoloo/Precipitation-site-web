@@ -56,7 +56,10 @@ export default {
 
 #mecenat1{
     position: absolute;
+<<<<<<< HEAD
     opacity: 1;
+=======
+>>>>>>> develop
     height: 100%;
     width: 100%;
     z-index: 1;

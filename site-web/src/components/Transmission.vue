@@ -40,7 +40,6 @@ export default {
 
 #transmission1{
     position: absolute;
-    opacity: 1;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -346,7 +345,7 @@ export default {
   }
   #img2transmissiontext{
     font-size: 32px;
-    top: 960px;
+    top: 820px;
     left: 530px;
   }
 

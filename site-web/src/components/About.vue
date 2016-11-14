@@ -36,7 +36,12 @@ export default {
 
 #about1{
     position: absolute;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    -webkit-transform:translateZ(-48px);
+    -moz-transform:translateZ(-48px);
+>>>>>>> develop
     height: 100%;
     width: 100%;
     z-index: 1;

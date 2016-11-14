@@ -60,7 +60,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 @font-face {
     font-family: "futura-light";
     src: url('../assets/Futura_Std/FuturaStd-Light.otf') ;
@@ -103,6 +103,7 @@ button
   color: white;
   text-transform: uppercase;
   text-align: center;
+  z-index: 99;
 }
 
 a
