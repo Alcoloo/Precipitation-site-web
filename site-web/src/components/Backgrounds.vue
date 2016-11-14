@@ -17,12 +17,26 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
+      visible : true
+    }
+  },
+  methods: {
+    toggle : function(){
+      this.visible = !this.visible;
     }
   }
 }
 </script>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active{
+  transition: all .5s;
+}
+
+.fade-enter, .fader-leave-active{
+  opacity: 0;
+  transform: translateX(30px);
+}
 .top1{
   background: url('../assets/img/top1.png') no-repeat left top;
   -webkit-background-size: contain;
@@ -38,6 +52,7 @@ export default {
   transform-origin:center;
   pointer-events:none;
   z-index: -1;
+  -webkit-transform:translateZ(2px);
 }
 
 .top2{
@@ -55,6 +70,7 @@ export default {
   transform-origin:center;
   pointer-events:none;
   z-index: -3;
+  -webkit-transform:translateZ(1px);
 }
 .top3{
   background: url('../assets/img/top3.png') no-repeat left top;
@@ -71,6 +87,7 @@ export default {
   transform-origin:center;
   pointer-events:none;
   z-index: -5;
+  -webkit-transform:translateZ(0px);
 }
 .bottom1{
   background: url('../assets/img/bottom1.png') no-repeat right center fixed;
@@ -88,6 +105,7 @@ export default {
   transform-origin:center ;
   pointer-events:none;
   z-index: 0;
+  -webkit-transform:translateZ(2px);
 }
 .bottom2{
   background: url('../assets/img/bottom2.png') no-repeat right center fixed;
@@ -105,6 +123,7 @@ export default {
   transform-origin:center ;
   pointer-events:none;
   z-index: -2;
+  -webkit-transform:translateZ(1px);
 }
 .bottom3{
   background: url('../assets/img/bottom3.png') no-repeat right center fixed;
@@ -122,5 +141,6 @@ export default {
   transform-origin:center ;
   pointer-events:none;
   z-index: -4;
+  -webkit-transform:translateZ(0px);
 }
 </style>

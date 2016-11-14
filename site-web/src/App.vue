@@ -71,6 +71,8 @@ body{
     min-height: 900px;
     height: 100vh;
     z-index: -1;
+    -webkit-perspective:100px;
+    -webkit-perspective-origin:50% 50%;
 }
 .fade-transition {
   transition: opacity 0.2s ease;
